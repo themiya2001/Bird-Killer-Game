@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Hunting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🐦 Bird Hunting Game</h1>
+            <div class="score-board">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="lives">Lives: <span id="lives">3</span></div>
+                <div class="time">Time: <span id="time">60</span>s</div>
+            </div>
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="bird" id="bird">
+                <div class="bird-body">🐦</div>
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="startBtn" class="btn">Start Game</button>
+            <button id="pauseBtn" class="btn" disabled>Pause</button>
+            <button id="resetBtn" class="btn">Reset</button>
+        </div>
+        
+        <div class="game-over" id="gameOver">
+            <div class="game-over-content">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <button id="playAgainBtn" class="btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
